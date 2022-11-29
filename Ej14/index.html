@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 14</title>
+        <meta charset="UTF-8">
+        <style>
+            td {
+
+                min-width: 30px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td colspan="5" style="text-align: right;" id="result">0</td>
+            </tr>
+            <tr>
+                <td onclick="back()">Retr</td>
+                <td colspan="2">CE</td>
+                <td colspan="2" onclick="reset()">C</td>
+            </tr>
+            <tr>
+                <td onclick="number(7)">7</td>
+                <td onclick="number(8)">8</td>
+                <td onclick="number(9)">9</td>
+                <td onclick="operator('/')">/</td>
+                <td onclick="operator('pow')">Raiz</td>
+            </tr>
+            <tr>
+                <td onclick="number(4)">4</td>
+                <td onclick="number(5)">5</td>
+                <td onclick="number(6)">6</td>
+                <td onclick="operator('*')">*</td>
+                <td onclick="operator('%')">%</td>
+            </tr>
+            <tr>
+                <td onclick="number(1)">1</td>
+                <td onclick="number(2)">2</td>
+                <td onclick="number(3)">3</td>
+                <td onclick="operator('-')">-</td>
+                <td onclick="operator('1/x')">1/x</td>
+            </tr>
+            <tr>
+                <td onclick="number(0)">0</td>
+                <td onclick="number(-1)">+/-</td>
+                <td onclick="number(-2)">.</td>
+                <td onclick="operator('+')">+</td>
+                <td onclick="finishOperation()">=</td>
+            </tr>
+        </table>
+    </body>
+    <script src="js/code.js"></script>
+</html>
